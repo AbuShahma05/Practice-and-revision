@@ -32,7 +32,7 @@ let something1 = null;
 let sym = Symbol('unique')
 
 // 7 -> BigInt
-let bigNumber = 123456679799999999999999999999999999
+let bigNumber = 123456679799999999999999999999999999;
 
 // Non primitive data types
 // 1 -> Object
