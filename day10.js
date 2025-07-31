@@ -6,8 +6,7 @@
  3. Factory Functions
  4. Closures
  5. Scope & Lexical Environment
-
-💡 Written to remember forever — minimal code, maximum clarity
+ 
 */
 
 ////////////////////////////////////////

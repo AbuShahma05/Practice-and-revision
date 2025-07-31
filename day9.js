@@ -30,7 +30,7 @@ class Person {
     }
 
     introduce() {
-        console.log(`Hi, I’m ${this.name} and I’m ${this.age} years old.`);
+        console.log(`Hi, I'm ${this.name} and Im ${this.age} years old.`);
     }
 }
 
