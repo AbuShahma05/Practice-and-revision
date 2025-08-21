@@ -10,7 +10,7 @@ function hoistedFunction() {
 }
 
 // Function expressions are NOT hoisted
-// notHoisted(); // TypeError
+notHoisted(); // TypeError
 var notHoisted = function () {
   console.log("This won't hoist.");
 };
@@ -32,7 +32,7 @@ console.log("End");
 // Output: Start → End → Microtask → setTimeout
 console.log("\n");
 
-// 3. Debouncing
+// // 3. Debouncing
 console.log("3 DEBOUNCING:");
 function debounce(fn, delay) {
   let timer;
@@ -46,13 +46,13 @@ const debouncedFunction = debounce(() => {
   console.log("Debounced: called after delay if no further calls");
 }, 1000);
 
-// Simulate rapid calls
+// // Simulate rapid calls
 debouncedFunction();
 debouncedFunction();
 debouncedFunction(); // Only this one will fire after 1 sec
 console.log("\n");
 
-// 4. Throttling
+// // 4. Throttling
 console.log("4 THROTTLING:");
 function throttle(fn, delay) {
   let lastTime = 0;
@@ -75,7 +75,7 @@ setInterval(() => {
 }, 200); // Will only log every 1 second
 console.log("\n");
 
-// 5. Currying
+// // 5. Currying
 console.log("5 CURRYING:");
 function add(a) {
   return function (b) {
@@ -88,7 +88,7 @@ function add(a) {
 console.log("Curried result:", add(1)(2)(3)); // Output: 6
 console.log("\n");
 
-// 6. Memoization
+// // 6. Memoization
 console.log("6 MEMOIZATION:");
 function memoize(fn) {
   const cache = {};
