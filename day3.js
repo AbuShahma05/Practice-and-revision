@@ -20,9 +20,6 @@ const person1 = {
     return this.firstName + " " + this.lastName;
   }
 };
-const x = person;
-x.id = 11
-console.log(x);
 
 
 let myobj = {
