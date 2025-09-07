@@ -9,9 +9,7 @@
  
 */
 
-////////////////////////////////////////
 //  1. Prototypes & Inheritance
-////////////////////////////////////////
 
 function Animal(name) {
     this.name = name;
@@ -32,9 +30,7 @@ Dog.prototype.speak = function() {
 const dog = new Dog("Tommy");
 console.log(dog.speak()); // Tommy barks.
 
-////////////////////////////////////////
 //  2. Encapsulation (via Closures)
-////////////////////////////////////////
 
 function Counter() {
     let count = 0; // private variable
@@ -57,12 +53,12 @@ function Counter() {
 const counter = Counter();
 console.log(counter.increment()); // 1
 console.log(counter.increment()); // 2
-console.log(counter.getCount());  // 2
+console.log(counter.decrement()); // 1
+console.log(counter.decrement()); // 0
+console.log(counter.getCount());  // 0
 // count is not accessible directly (encapsulation)
 
-////////////////////////////////////////
 //  3. Factory Functions
-////////////////////////////////////////
 
 function createUser(name, age) {
     return {
@@ -77,9 +73,7 @@ function createUser(name, age) {
 const user1 = createUser("Abu", 22);
 console.log(user1.greet()); // Hello, I'm Abu, 22 years old.
 
-////////////////////////////////////////
 //  4. Closures
-////////////////////////////////////////
 
 function outerFunction(outerVar) {
     return function innerFunction(innerVar) {
@@ -90,9 +84,7 @@ function outerFunction(outerVar) {
 const closureExample = outerFunction("React");
 console.log(closureExample("Hooks")); // Outer: React, Inner: Hooks
 
-////////////////////////////////////////
 //  5. Scope & Lexical Environment
-////////////////////////////////////////
 
 let globalVar = "I'm global";
 
@@ -101,9 +93,9 @@ function outer() {
 
     function inner() {
         let innerVar = "I'm inner";
-        console.log(globalVar); // Accessible
-        console.log(outerVar);  // Accessible
-        console.log(innerVar);  // Accessible
+        console.log(globalVar); 
+        console.log(outerVar);  
+        console.log(innerVar);  
     }
 
     inner();
