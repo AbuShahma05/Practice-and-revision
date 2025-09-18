@@ -1,8 +1,8 @@
-const mongoose = require("mongoose");
+import mongoose from 'mongoose'
 
 // Connect to MongoDB
 mongoose
-  .connect("mongodb://127.0.0.1:27017/day3db")
+  .connect("mongodb://127.0.0.1:27017/day27db")
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("Connection error:", err));
 
