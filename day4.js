@@ -1,10 +1,11 @@
+// [object Object] this is the output
 const person = {
     name : "Abu Shahma",
     age : 22,
     city : "Gaya"
 }
 document.getElementById("Hello").innerHTML = person
-
+  
 // JavaScript Object Revision - Quick Recap
 
 const user = {

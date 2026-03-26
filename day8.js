@@ -1,53 +1,60 @@
-// JavaScript SetTimeout and SetInterval are the only native function in JavaScript 
-// that is used to run code asynchronously, it means allowing the function to be executed
-// immediately, there is no need to wait for the current execution completion, it will be
-//  for further execution.
+/* 
+JavaScript SetTimeout and SetInterval are the only native function in
+JavaScript that is used to run code asynchronously, it means allowing
+the function to be executed immediately, there is no need to wait for
+the current execution completion, it will be for further execution.
+*/
 
 // window.setTimeout(); also can be written as without window prefix
 
-// let hell0 = () => {
-//   setTimeout(() => {}, timeout);
-// };
+/* 
+let hell0 = () => {
+setTimeout(() => {}, timeout);
+};
+*/
 
 clearTimeout(); // stop the execution of settimeout
 
-//window.setInterval(); repeats a given function at every given time-interval, 
-// this can also be written as without window prefix
+/* 
+window.setInterval(); repeats a given function at every given time-interval, 
+this can also be written as without window prefix
+The first parameter is the function to be executed.
+The second parameter indicates the length of the time-interval between each
+execution.
+*/
 
-// The first parameter is the function to be executed.
-// The second parameter indicates the length of the time-interval between each execution.
-
-clearInterval()  // method stop the execution of the function specified in the setinterval() method
+clearInterval(); // method stop the execution of the function specified in the
+// setinterval() method
 
 setTimeout(hello, 1000);
 function hello() {
-    console.log("Hey my name is Abu Shahma");
+  console.log("Hey my name is Abu Shahma");
 }
 
-setInterval(hello2, 1000)
+setInterval(hello2, 1000);
 function hello2() {
-    console.log("Whatsup!");
-    
+  console.log("Whatsup!");
 }
 
 // Callback
 
-// How Do Callbacks Work in JavaScript?
-// JavaScript executes code line by line (synchronously), but sometimes we need to delay 
-// execution or wait for a task to complete before running the next function. Callbacks 
-// help achieve this by passing a function that is executed later.
+/* 
+How Do Callbacks Work in JavaScript?
+JavaScript executes code line by line (synchronously), but sometimes we need to
+delay execution or wait for a task to complete before running the next function.
+Callbacks help achieve this by passing a function that is executed later.
+*/
 
 let greet = (name, callbacks) => {
-      console.log("Hello" + name);
-      callbacks()
-}
+  console.log("Hello" + name);
+  callbacks();
+};
 
 let saybye = () => {
-    console.log("Good bye");
-    
-}
+  console.log("Good bye");
+};
 
-greet(" Abu shahma", saybye)
+greet(" Abu shahma", saybye);
 
 // JavaScript Async Foundations
 
@@ -60,7 +67,7 @@ let timeoutID = setTimeout(greetLater, 2000); // executes once after 2s
 
 // 2. clearTimeout
 // Stops the timeout before it executes
-clearTimeout(timeoutID); // Comment this line to see setTimeout working
+clearTimeout(timeoutID);
 
 // 3. setInterval
 // Repeats a function every given interval
@@ -89,7 +96,9 @@ function sayBye() {
 greeting("Abu Shahma", sayBye);
 
 // 6. Promises
-// Promise represents a value that may be available now, or in the future, or never.
+/* 
+Promise represents a value that may be available now, or in the future, or never.
+*/
 
 let fakeAPI = new Promise((resolve, reject) => {
   let success = true;
@@ -119,7 +128,7 @@ function wait(ms) {
 
 async function asyncExample() {
   console.log("Waiting for 2 seconds...");
-  await wait(2000); 
+  await wait(2000);
   console.log("Done waiting (after 2 seconds)");
 }
 

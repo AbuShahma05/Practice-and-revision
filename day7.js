@@ -2,7 +2,7 @@ const user = {
   name: 'Abu Shahma',
   address: {
     city: 'Gaya',
-    zip: '10001',
+    zip: '824237',
   },
 };
 

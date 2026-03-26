@@ -50,7 +50,7 @@ const car = {
 
 car.showDetails(); // Car: Toyota Corolla
 
-// Edge case: this in arrow function (no binding)
+// Edge case: this is arrow function (no binding)
 const arrowExample = () => {
     console.log("Arrow Function `this`:", this); // depends on lexical scope
 };
