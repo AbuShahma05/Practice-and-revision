@@ -23,8 +23,9 @@ The second parameter indicates the length of the time-interval between each
 execution.
 */
 
-clearInterval(); // method stop the execution of the function specified in the
-// setinterval() method
+clearInterval(); /* 
+method stop the execution of the function specified in the setinterval() method
+*/
 
 setTimeout(hello, 1000);
 function hello() {

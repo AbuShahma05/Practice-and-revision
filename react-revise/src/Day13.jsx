@@ -1,3 +1,5 @@
+import React, { useState, useRef } from "react";
+
 /* 
 Day 13 - React Concepts
 
@@ -46,8 +48,6 @@ useState is a React hook used in functional components.
 
 Example:
 */
-
-import React, { useState } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -163,8 +163,6 @@ Uncontrolled Component:
 Example:
 */
 
-import { useRef } from "react";
-
 function UncontrolledInput() {
   const inputRef = useRef();
 
@@ -187,4 +185,20 @@ Conclusion:
 - State lets us handle dynamic values inside components.
 - Events help us handle user interactions.
 - Controlled components give more control but need state.
-- Uncontrolled components are easier but */
+- Uncontrolled components are easier but give less control.
+*/
+
+export default function App() {
+  return (
+    <div>
+      <Greeting />
+      <Welcome name="John" />
+      <Counter />
+      <ClickExample />
+      <InputExample />
+      <FormExample />
+      <ControlledInput />
+      <UncontrolledInput />
+    </div>
+  );
+}

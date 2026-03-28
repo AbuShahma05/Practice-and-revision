@@ -72,7 +72,7 @@ const throttledFunction = throttle(() => {
 // Simulate rapid calls
 setInterval(() => {
   throttledFunction();
-}, 200); // Will only log every 1 second
+}, 2000); // Will only log every 1 second
 console.log("\n");
 
 //  5. Currying
