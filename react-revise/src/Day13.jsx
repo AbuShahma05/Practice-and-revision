@@ -36,8 +36,9 @@ function Welcome(props) {
   return <h3>Hello, {props.name}!</h3>;
 }
 
-// Usage:
-// <Welcome name="John" />
+/* 
+ Usage: <Welcome name="John" />
+*/
 
 /*
 -----------------------------
